@@ -1,33 +1,43 @@
 <html>
   <meta charset="UTF-8" /><meta
     content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5"
-    nama = "viewport"
-  /><meta content="IE=edge" http-equiv="Kompatibel dengan X-UA" />
+    name="viewport"
+  /><meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link
-    rel="prasambungkan"
+    rel="preconnect"
     href="https://fonts.gstatic.com"
     crossorigin
-  /><tautan
+  /><link
     href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
     rel="stylesheet"
   />
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
-  <tautan
+  <link
     href="https://hanyauntukmu.likeadream.repl.co/style.css"
     rel="stylesheet"
-    ketik = "teks/css"
+    type="text/css"
   />
   <script src="https://hanyauntukmu.likeadream.repl.co/script.js"></script>
-  <kepala>
-    <title> Halo :D</title>
-  </kepala>
-  <gaya>
-    tubuh {
+  <head> 
+    <title> Hello :D</title>
+  </head>
+  <style>
+    body {
       background-image: url(https://i.postimg.cc/NMLZ6Zk5/IMG-20220207-131156-010.jpg);
       background-repeat: no-repeat;
-      background-size: penutup;
-      latar belakang-posisi-y: bawah;
+      background-size: cover;
+      background-position-y: bottom;
     }
-    tubuh::sebelum {
-      isi: "" !penting;
-      warna: transparan! penting
+    body::before {
+      content: "" !important;
+      color: transparent !important;
+    }
+  </style>
+  <body>
+    <div id="bodyblur">
+      <!-- <img
+        src="https://i.postimg.cc/NMLZ6Zk5/IMG-20220207-131156-010.jpg"
+        width="100%"
+        height="100%"
+      /> -->
+    </div>
