@@ -41,3 +41,53 @@
         height="100%"
       /> -->
     </div>
+
+    <div id="Content">
+      <div class="image">
+        <img
+          src="https://i.postimg.cc/W4xjf6yM/peachcat-peachcat-and-goma.gif"
+          width="130px"
+          height="130px"
+        />
+      </div>
+      <div>
+        <blockquote>
+          <p id="text"></p>
+          <p id="text2"></p>
+        </blockquote>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function play() {
+        var audio = new Audio(
+          "https://sndup.net/tqdx/d"
+        )
+        audio.play()
+      }
+
+      const swals = Swal.mixin({
+        allowOutsideClick: false,
+        cancelButtonColor: "#FF0040",
+      })
+      const swalsy = Swal.mixin({
+        confirmButtonText: "Iya",
+        allowOutsideClick: false,
+      })
+      const swalst = Swal.mixin({
+        allowOutsideClick: false,
+        showConfirmButton: false,
+        timer: 5000,
+        timerProgressBar: true,
+      })
+
+      async function mulaitanya() {
+        var { isConfirmed: tanyawal } = await swals.fire({
+          title: `Halo :D kamu bisa klik tombol dibawah ya`,
+          imageUrl: "https://i.postimg.cc/0j2LDLxP/heart-happy.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+          confirmButtonText: "Okay",
+          allowOutsideClick: false,
+          showCancelButton: false,
+        })
